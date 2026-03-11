@@ -1,12 +1,24 @@
 # 개발 규칙
 * 반드시 아래의 내용을 준수한다.
 * 이 파일은 임의로 수정하지 않는다.
+* 서버가 굉장히 안좋으므로 성능을 최우선으로 생각한다.
+
+## 서버 정보
+- Oracle Cloud 1core 1GB memory
+- 아이피 168.107.31.65
+- spring 포트 8080
 
 ## 버전 정보
 - java 17.0.18
 - spring 3.5.11
 
 ## 경로 및 명명 규칙
+### 클래스 및 함수, 변수
+- 클래스 명은 PascalCase를 사용한다.
+- 함수 및 변수 명은 camelCase를 사용한다.
+- 그 외 단순 값이나 전역변수 등은 snake_case를 사용한다.
+- ex) 클래스 - MyClass, 함수 - myFunction, 변수 - myVariable, 전역변수 - err_not_found
+- ex2) 언어 변환 값 - test_message = "테스트 메시지"
 ### 패키지
 - com.vercel.gwangho로 한다.
 ### 컨트롤러 경로 및 명명 규칙
