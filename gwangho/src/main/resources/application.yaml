@@ -1,3 +1,6 @@
 spring:
   application:
     name: gwangho
+
+server:
+  address: 0.0.0.0
