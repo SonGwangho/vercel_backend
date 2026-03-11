@@ -1,4 +1,4 @@
-package com.example.demo.service
+package app.vercel.gwangho.test.service
 
 import org.springframework.stereotype.Service
 

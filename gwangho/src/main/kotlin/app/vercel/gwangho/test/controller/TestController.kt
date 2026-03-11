@@ -1,6 +1,6 @@
-package com.example.demo.controller
+package app.vercel.gwangho.test.controller
 
-import com.example.demo.service.TestService
+import app.vercel.gwangho.test.service.TestService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 

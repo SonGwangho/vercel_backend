@@ -3,6 +3,8 @@
 - spring 3.5.11
 
 ## 경로 및 명명 규칙
+### 패키지
+- com.vercel.gwangho로 한다.
 ### 컨트롤러 경로 및 명명 규칙
 - src/main/kotlin/app/vercel/gwangho/{분류}/controller
 - 파일은 {분류}Controller.kt로 만든다.
