@@ -1,6 +1,8 @@
 spring:
   application:
     name: gwangho
+  datasource:
+    url: ${DATABASE_URL}
 
 server:
   address: 0.0.0.0
