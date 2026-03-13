@@ -7,15 +7,18 @@ import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 
 @Configuration
-class CorsConfig {
+class CorsConfig(
+    private val webSocketProperties: WebSocketProperties
+) {
 
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
         val config = CorsConfiguration()
 
-        config.allowedOrigins = listOf("https://gwangho.vercel.app")
+        config.allowedOrigins = webSocketProperties.allowedOrigins
         config.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
         config.allowedHeaders = listOf("*")
+        config.exposedHeaders = listOf("Authorization", "X-WebSocket-Token")
         config.allowCredentials = true
         config.maxAge = 3600
 
